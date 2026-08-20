@@ -86,9 +86,3 @@ func ValidateLicenseTransfer(license BrandLicense, currentOwner, proposedOwner s
 	}
 	return nil
 }
-
-func menuReviewSnapshot(store StoreProfile) StoreProfile {
-	clone := store
-	clone.MenuBrandName = ""
-	return clone
-}

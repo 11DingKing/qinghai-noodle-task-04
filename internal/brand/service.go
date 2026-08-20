@@ -28,8 +28,6 @@ func (s *Service) CheckLogo(_ context.Context, license BrandLicense, store Store
 }
 
 func (s *Service) CheckMenuName(_ context.Context, store StoreProfile) error {
-	store = menuReviewSnapshot(store)
-
 	return ValidateMenuBrandName(store)
 }
 
